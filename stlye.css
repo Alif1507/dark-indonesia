@@ -11,19 +11,41 @@ body {
   height: 10000px;
 }
 
+.op-logo {
+  width: 237px;
+  height: auto;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  z-index: 101;
+  opacity: 0;
+}
+
+.text-op {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 101;
+  font-family: "Libre Baskerville", serif;
+  color: white;
+  font-size: 70px;
+  opacity: 0;
+}
+
 .box {
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 50%;
+  width: 50vw;
   height: 100vh;
-  background-color: white;
+  background-color: #ff0101;
   z-index: 100;
 }
 
 .box1 {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 50vw;
   height: 100vh;
   background-color: #ff0101;
   z-index: 100;
@@ -96,7 +118,7 @@ body {
   height: 100vh;
   top: 0;
   z-index: -100;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 header {
@@ -148,6 +170,84 @@ header {
   font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 50px;
+  position: relative;
+  z-index: 100;
+}
+
+.head1::before {
+  content: "";
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 0, 0, 1) 70%
+  );
+  left: -10px;
+  width: 10px;
+  height: 70px;
+  position: absolute;
+  z-index: -2;
+  animation: 7s merah-hitam ease-in-out infinite;
+}
+
+.indo {
+  animation: 7s pertama ease-in-out infinite;
+  color: #8C8C8C;
+}
+
+.gelap {
+  color: #8C8C8C;
+  animation: 7s kedua ease-in-out infinite;
+}
+
+@keyframes pertama {
+  0% {
+    color: #8C8C8C;
+  }
+
+  50% {
+    color: white;
+  }
+
+  75% {
+    color: #8C8C8C;
+  }
+}
+
+
+
+@keyframes kedua {
+  0% {
+    color: #8C8C8C;
+  }
+
+  50% {
+    color: #8C8C8C;
+  }
+  
+  75% {
+    color: white;
+  }
+}
+
+@keyframes merah-hitam {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(0);
+    width: 310px;
+  }
+
+  75% {
+    width: 186px;
+    transform: translateX(300px);
+  }
+
+  99% {
+    
+  }
 }
 
 .subhead1 {
@@ -190,7 +290,7 @@ header {
   background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 23%,
     rgba(255, 95, 95, 1) 100%
   );
 }
@@ -198,7 +298,6 @@ header {
 .head2 {
   font-family: "Inter", sans-serif;
   font-size: 50px;
-
 }
 
 .info {
@@ -258,7 +357,6 @@ header {
 .subhead2-2:hover::after {
   width: 390px;
 }
-
 
 .parag2-2 {
   list-style-type: none;

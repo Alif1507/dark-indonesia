@@ -7,4 +7,4 @@ window.addEventListener("scroll", () =>{
   ats.style.top = value * -0.9 + "px"
   bwa.style.top = value * -0.9 + "px"
   hero.style.marginTop = value * -0.9 + "px"
-})
+});
