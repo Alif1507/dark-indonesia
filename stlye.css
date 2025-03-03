@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
   padding: 0;
@@ -176,8 +177,12 @@ header {
 
 .head1::before {
   content: "";
-  background: rgb(153,0,0);
-background: linear-gradient(270deg, rgba(153,0,0,1) 0%, rgba(255,0,0,1) 100%);
+  background: rgb(153, 0, 0);
+  background: linear-gradient(
+    270deg,
+    rgba(153, 0, 0, 1) 0%,
+    rgba(255, 0, 0, 1) 100%
+  );
   left: -10px;
   width: 10px;
   height: 70px;
@@ -188,17 +193,17 @@ background: linear-gradient(270deg, rgba(153,0,0,1) 0%, rgba(255,0,0,1) 100%);
 
 .indo {
   animation: 7s pertama ease-in-out infinite;
-  color: #8C8C8C;
+  color: #8c8c8c;
 }
 
 .gelap {
-  color: #8C8C8C;
+  color: #8c8c8c;
   animation: 7s kedua ease-in-out infinite;
 }
 
 @keyframes pertama {
   0% {
-    color: #8C8C8C;
+    color: #8c8c8c;
   }
 
   50% {
@@ -206,21 +211,19 @@ background: linear-gradient(270deg, rgba(153,0,0,1) 0%, rgba(255,0,0,1) 100%);
   }
 
   75% {
-    color: #8C8C8C;
+    color: #8c8c8c;
   }
 }
 
-
-
 @keyframes kedua {
   0% {
-    color: #8C8C8C;
+    color: #8c8c8c;
   }
 
   50% {
-    color: #8C8C8C;
+    color: #8c8c8c;
   }
-  
+
   75% {
     color: white;
   }
@@ -242,7 +245,6 @@ background: linear-gradient(270deg, rgba(153,0,0,1) 0%, rgba(255,0,0,1) 100%);
   }
 
   99% {
-
   }
 }
 
@@ -283,6 +285,7 @@ background: linear-gradient(270deg, rgba(153,0,0,1) 0%, rgba(255,0,0,1) 100%);
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
@@ -291,8 +294,16 @@ background: linear-gradient(270deg, rgba(153,0,0,1) 0%, rgba(255,0,0,1) 100%);
   );
 }
 
+
+.pillar {
+  background-color: #da0808;
+  position: absolute;
+  width: 3px;
+  height: 700px;
+}
+
 .head2 {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 50px;
 }
 
@@ -300,7 +311,7 @@ background: linear-gradient(270deg, rgba(153,0,0,1) 0%, rgba(255,0,0,1) 100%);
   width: 100vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   font-family: "Inter", sans-serif;
 }
 
@@ -308,6 +319,8 @@ background: linear-gradient(270deg, rgba(153,0,0,1) 0%, rgba(255,0,0,1) 100%);
   position: relative;
   color: #ff0101;
   font-size: 30px;
+  font-family: "REM", sans-serif;
+  font-weight: normal;
 }
 
 .subhead2-1::after {
@@ -329,12 +342,15 @@ background: linear-gradient(270deg, rgba(153,0,0,1) 0%, rgba(255,0,0,1) 100%);
 
 .parag2-1 {
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 
 .subhead2-2 {
   position: relative;
   color: #ff0101;
   font-size: 30px;
+  font-family: "REM", sans-serif;
+  font-weight: normal;
 }
 
 .subhead2-2::after {
@@ -359,6 +375,8 @@ background: linear-gradient(270deg, rgba(153,0,0,1) 0%, rgba(255,0,0,1) 100%);
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
 }
 
 .parag2-2 li {
@@ -371,4 +389,143 @@ background: linear-gradient(270deg, rgba(153,0,0,1) 0%, rgba(255,0,0,1) 100%);
 
 .info-kanan {
   margin-right: 8rem;
+  margin-left: 8rem;
+}
+
+.subhead2-3, .subhead2-4 {
+  color: white;
+  font-family: "REM", sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  position: relative;
+}
+
+.subhead2-3::after {
+  content: "";
+  border-radius: 16px;
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  color: white;
+  background-color: white;
+  height: 4px;
+  width: 10px;
+  transition: all 700ms ease-in-out;
+}
+
+.subhead2-3:hover::after {
+  width: 380px;
+}
+
+.subhead2-4::after {
+  content: "";
+  border-radius: 16px;
+  position: absolute;
+  top: 2.4rem;
+  left: 0;
+  color: white;
+  background-color: white;
+  height: 4px;
+  width: 10px;
+  transition: all 700ms ease-in-out;
+}
+
+.subhead2-4:hover::after {
+  width: 400px;
+}
+
+.parag2-3 {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.parag2-3 li {
+  margin-left: -2.4rem;
+}
+
+.artikel {
+  position: relative;
+}
+
+.container-kabur {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 80px;
+  grid-row-gap: 80px;
+  overflow: hidden;
+  width: 532px;
+  position: relative;
+}
+
+.kabur1, .kabur2, .kabur3, .kabur4 {
+  width: 217px;
+  height: 195px;
+  transition: all ease-in-out 800ms;
+  position: relative;
+}
+
+
+.kabur1::after {
+  content: "The conversation";
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  opacity: 0.4;
+  width: 217px;
+  height: 50px;
+  position: absolute;
+  border-radius: 0 0 24px 24px; 
+  bottom: 0;
+  left: 0;
+}
+
+.kabur2::after {
+  content: "kompas.id";
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  opacity: 0.4;
+  width: 217px;
+  height: 50px;
+  position: absolute;
+  border-radius: 0 0 24px 24px; 
+  bottom: 0;
+  left: 0;
+}
+
+.kabur1 img, .kabur2 img, .kabur3 img, .kabur4 img  {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.panah-kiri, .panah-kanan {
+  font-size: 80px ;
+  position: absolute;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.panah-kiri {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.panah-kanan, .panah-kiri {
+  right: -4rem;
+  top: 6rem;
+  z-index: 89;
+}
+
+.botol {
+  width: 1000px;
+  background-color: black;
 }
