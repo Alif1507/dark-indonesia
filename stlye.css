@@ -57,7 +57,7 @@ body {
   top: 0;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 100vw;
   margin: 1rem 0rem 0 0rem;
   z-index: 90;
 }
@@ -286,14 +286,14 @@ header {
   justify-content: center;
   align-items: center;
   position: relative;
+  padding-bottom: 4rem;
   background: rgb(255, 255, 255);
   background: linear-gradient(
-    90deg,
+    40deg,
     rgba(255, 255, 255, 1) 23%,
     rgba(255, 95, 95, 1) 100%
   );
 }
-
 
 .pillar {
   background-color: #da0808;
@@ -392,7 +392,8 @@ header {
   margin-left: 8rem;
 }
 
-.subhead2-3, .subhead2-4 {
+.subhead2-3,
+.subhead2-4 {
   color: white;
   font-family: "REM", sans-serif;
   font-weight: normal;
@@ -462,16 +463,18 @@ header {
   position: relative;
 }
 
-.kabur1, .kabur2, .kabur3, .kabur4 {
+.kabur1,
+.kabur2,
+.kabur3,
+.kabur4 {
   width: 217px;
   height: 195px;
   transition: all ease-in-out 800ms;
   position: relative;
 }
 
-
 .kabur1::after {
-  content: "The conversation";
+  content: "Sumber: The conversation";
   background-color: black;
   text-align: center;
   color: white;
@@ -480,13 +483,13 @@ header {
   width: 217px;
   height: 50px;
   position: absolute;
-  border-radius: 0 0 24px 24px; 
+  border-radius: 0 0 24px 24px;
   bottom: 0;
   left: 0;
 }
 
 .kabur2::after {
-  content: "kompas.id";
+  content: "Sumber: kompas.id";
   background-color: black;
   text-align: center;
   color: white;
@@ -495,20 +498,24 @@ header {
   width: 217px;
   height: 50px;
   position: absolute;
-  border-radius: 0 0 24px 24px; 
+  border-radius: 0 0 24px 24px;
   bottom: 0;
   left: 0;
 }
 
-.kabur1 img, .kabur2 img, .kabur3 img, .kabur4 img  {
+.kabur1 img,
+.kabur2 img,
+.kabur3 img,
+.kabur4 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 24px;
 }
 
-.panah-kiri, .panah-kanan {
-  font-size: 80px ;
+.panah-kiri,
+.panah-kanan {
+  font-size: 80px;
   position: absolute;
   cursor: pointer;
   transition: all 300ms ease-in-out;
@@ -519,13 +526,142 @@ header {
   pointer-events: none;
 }
 
-.panah-kanan, .panah-kiri {
+.panah-kanan,
+.panah-kiri {
   right: -4rem;
   top: 6rem;
   z-index: 89;
 }
 
-.botol {
-  width: 1000px;
+.masalah {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+}
+
+.head3-1 {
+  font-weight: bold;
+  font-size: 50px;
+  color: #ff0101;
+  font-family: "Inter", sans-serif;
+}
+
+.masalah-kiri {
+  display: flex;
+  flex-direction: column;
+  margin-right: 8rem;
+  margin-left: 8rem;
+}
+
+.masalah-kanan {
+  display: flex;
+  flex-direction: column;
+  margin-right: 8rem;
+  margin-left: 8rem;
+}
+
+.subhead3-1 {
+  color: #da0808;
+  font-family: "REM", sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  text-align: start;
+}
+
+.parag3-1 {
+  text-align: start;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 0.5rem;
+}
+
+.subhead3-2 {
+  font-family: "REM", sans-serif;
+  color: #da0808;
+  font-size: 30px;
+  font-weight: normal;
+  text-wrap: nowrap;
+  text-align: start;
+}
+
+.parag3-2 {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: start;
+}
+
+.accordion {
+  width: 300px;
+  margin-top: 3rem;
+}
+
+.accordion-item {
+  margin-bottom: 5px;
+}
+
+.accordion-item .content {
+  font-size: 12px;
+}
+
+.accordion input[type="radio"] {
+  display: none;
+}
+
+.accordion .content {
+  height: 0px;
+  overflow: hidden;
+  font-size: 15px;
+  text-align: start;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.content::after {
+  content: "";
   background-color: black;
+  position: absolute;
+  width: 240px;
+  height: 2px;
+}
+
+.accordion input[type="radio"]:checked + .accordion-header + .content {
+  height: auto;
+  padding: 15px;
+}
+.accordion-icon {
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.accordion input[type="radio"]:checked + .accordion-header .accordion-icon {
+  transform: rotate(180deg);
+}
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: left;
+}
+.accordion-header .accordion-title {
+  font-size: 25px;
+  font-family: "REM", sans-serif;
+  font-weight: normal;
+  color: #da0808;
+}
+
+
+.subhead3-3 {
+  color: #da0808;
+  font-family: "REM", sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  text-align: start;
+  text-wrap: nowrap;
 }
