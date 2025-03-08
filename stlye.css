@@ -105,7 +105,7 @@ body {
   opacity: 0.4;
   background-color: black;
   position: fixed;
-  z-index: -101;
+  z-index: 10;
   height: 6rem;
 }
 
@@ -184,7 +184,7 @@ header {
   background: linear-gradient(
     270deg,
     rgba(153, 0, 0, 1) 0%,
-    rgba(255, 0, 0, 1) 100%
+    rgba(255, 0, 0, 1) 20%
   );
   left: -10px;
   width: 10px;
@@ -668,3 +668,287 @@ header {
   text-align: start;
   text-wrap: nowrap;
 }
+
+
+.head-dokum {
+  background-color: #DA0808;
+  padding-bottom: 11rem;
+  position: relative;
+}
+
+.judul-dokum {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-family: inter;
+  padding-top: 5rem;
+}
+
+.gambar-dokum {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.gambar-dokum img {
+  margin-top: 70px;
+}
+
+.img1-dokum {
+  top: 0;
+  position: absolute;
+}
+
+.img2-dokum {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.img3-dokum {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.img4-dokum {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.img5-dokum {
+  position: absolute;
+  bottom: 0;
+  margin-bottom:7rem ;
+}
+
+.img6-dokum {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.head-sol {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.judul-sol {
+  color: #FF0101;
+  font-size: 50px;
+  text-align: center;
+  font-family: inter;
+  padding-top: 50px;
+}
+
+.isi-sol {
+  border: 2px solid #DA0808;
+  border-radius: 25px;
+  width: 900px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.headisi-sol {
+  display: flex;
+  justify-content: center;
+}
+
+.kata-sol {
+  font-family: poppins;
+}
+
+.head-isi {
+  display: flex;
+  text-align: center;
+  gap: 7rem;
+  align-items: center;
+}
+
+.judul-isi {
+  color: #DA0808;
+  font-family: REM;
+  text-align: center;
+  font-weight: 500;
+}
+
+.bagian1 {
+  width: 330px;
+  text-align:center;
+
+}
+
+.kepala-isi {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.kata-isi {
+  text-align: left;
+  font-family: poppins;
+}
+
+.kel1 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.gambar {
+  width: 11px;
+  height: 21px;
+}
+
+.kata1-isi {
+  text-align: left;
+  font-family: poppins;
+  margin-left: 22px;
+}
+
+.head-kirim {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 30px;
+  width: 240px;
+  height: 34px;
+  justify-content: space-between;
+
+}
+
+.gambar1 {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.kata-kirim {
+  font-family: poppins;
+  margin-left: 15px;
+  font-size: 15px;
+}
+
+.head1-kirim {
+  justify-content: center;
+  display: flex;
+}
+
+.bagian2 {
+  width: 380px;
+  text-align: center;
+}
+
+.kel4 {
+  display: flex;
+  align-items: center;
+}
+
+.imgsol1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.imgsol2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 20px;
+}
+
+.imgsol3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.imgsol4 {
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+
+.imgsol5 {
+  position: absolute;
+  top: 30%;
+  left: 0;
+}
+
+.imgsol6 {
+  position: absolute;
+  top: 90%;
+  right: 0;
+  margin-right: 20px;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+#prev { left: 10px; }
+#next { right: 10px; }
+
+/* Pagination */
+.pagination {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.dot {
+  height: 5px;
+  width: 42px;
+  margin: 0 5px;
+  background-color: #FF0101;
+  border-radius: 20px;
+  opacity: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #FF0101;
+  opacity: 100%;
+}
+
+
+
+
+

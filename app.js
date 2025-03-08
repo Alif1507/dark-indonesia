@@ -37,3 +37,56 @@ panahkiri.addEventListener("click", () => {
   panahkiri.style.pointerEvents = "none"
   
 });
+
+const slider = document.querySelector(".slider");
+const slides = document.querySelectorAll(".slide");
+const prevButton = document.getElementById("prev");
+const nextButton = document.getElementById("next");
+const dots = document.querySelectorAll(".dot");
+
+let index = 0;
+const totalSlides = slides.length;
+const slidesPerView = 3;
+
+// Fungsi untuk update slider
+function updateSlider() {
+    const translateX = -index * (100 / slidesPerView);
+    slider.style.transform = `translateX(${translateX}%)`;
+
+    // Update active dot
+    dots.forEach(dot => dot.classList.remove("active"));
+    dots[index].classList.add("active");
+}
+
+// Tombol next
+nextButton.addEventListener("click", () => {
+    if (index < totalSlides - slidesPerView) {
+        index++;
+    } else {
+        index = 0;
+    }
+    updateSlider();
+});
+
+// Tombol prev
+prevButton.addEventListener("click", () => {
+    if (index > 0) {
+        index--;
+    } else {
+        index = totalSlides - slidesPerView;
+    }
+    updateSlider();
+});
+
+// Klik dot pagination
+dots.forEach((dot, dotIndex) => {
+    dot.addEventListener("click", () => {
+        index = dotIndex;
+        updateSlider();
+    });
+});
+
+// Update slider saat load pertama
+updateSlider();
+
+
