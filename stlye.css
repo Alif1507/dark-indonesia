@@ -160,13 +160,11 @@ header {
 
 .ats {
   top: 0;
-  transform-style: preserve-3d;
 }
 
 .bwa {
   top: 0;
   right: 12rem;
-  transform-style: preserve-3d;
 }
 
 .gbr img {

@@ -6,7 +6,7 @@ window.addEventListener("scroll", () =>{
   let value = window.scrollY
   ats.style.top = value * -0.9 + "px"
   bwa.style.top = value * -0.9 + "px"
-  hero.style.marginTop = value * -0.9 + "px"
+  hero.style.marginLeft = value * -0.9 + "px"
   
 });
 

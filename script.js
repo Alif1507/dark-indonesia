@@ -15,6 +15,18 @@ animate(".text-op", {scale: 0}, {delay: 8})
 
 animate(
   ".box",
+  { backgroundColor: "rgb(255, 0, 0)" },
+  { duration: 4, ease: [0.39, 0.24, 0.3, 1], delay: 8 }
+);
+
+animate(
+  ".box1",
+  { backgroundColor: "rgb(255, 0, 0)" },
+  { duration: 4, ease: [0.39, 0.24, 0.3, 1], delay: 8 }
+);
+
+animate(
+  ".box",
   { x: "100%" },
   { duration: 4, ease: [0.39, 0.24, 0.3, 1], delay: 8.4 }
 );
