@@ -3,10 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap");
 
-
 html {
   scroll-behavior: smooth;
-  width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
@@ -14,6 +13,10 @@ body {
   margin: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+}
+
+.kanan svg {
+  display: none;
 }
 
 .op-logo {
@@ -24,6 +27,10 @@ body {
   left: 50%;
   z-index: 101;
   opacity: 0;
+}
+
+.menu {
+  display: none;
 }
 
 .text-op {
@@ -61,6 +68,28 @@ body {
   z-index: 100;
 }
 
+.box2 {
+  display: none;
+  position: fixed;
+  bottom: 50%;
+  left: 0;
+  width: 100vw;
+  height: 50vh;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
+.box3 {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 100vw;
+  height: 50vh;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -72,7 +101,7 @@ body {
 }
 
 .hero1 {
- display: none;
+  display: none;
 }
 
 .kiri {
@@ -1000,7 +1029,7 @@ header {
 }
 
 .footer {
-  background-color: #DA0808;
+  background-color: #da0808;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -1031,10 +1060,10 @@ header {
   border: 1px solid white;
   color: white;
   border-radius: 30px;
-  background-color: #DA0808;
+  background-color: #da0808;
   width: 340px;
   height: 57px;
-  padding-left: 2rem; 
+  padding-left: 2rem;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
@@ -1043,7 +1072,6 @@ header {
   color: white;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
-
 }
 
 .ip {
@@ -1085,7 +1113,6 @@ header {
 .f-logo {
   width: 170px;
   height: 170px;
-
 }
 
 .f-tahu {
@@ -1105,7 +1132,7 @@ header {
   font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-weight: normal;
-} 
+}
 
 .f-logo img {
   width: 100%;
@@ -1134,15 +1161,15 @@ header {
   justify-content: space-around;
   align-items: center;
   margin-left: 2rem;
-  margin-right: 2rem
+  margin-right: 2rem;
 }
 
 .f-info {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 4rem;
-    grid-row-gap: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
 }
 
 .f-info a {
@@ -1161,7 +1188,7 @@ header {
 .f-bwh ul {
   list-style-type: none;
   display: flex;
-  gap: 2rem ;
+  gap: 2rem;
 }
 
 .f-bwh h1 {
@@ -1169,7 +1196,6 @@ header {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   font-size: 18px;
-
 }
 
 .f-bwh ul li a {
@@ -1188,18 +1214,15 @@ header {
   to {
     transform: translateY(0px);
   }
-  
- }
+}
 
-
-
- .dari-bawah {
+.dari-bawah {
   animation: daribawah linear;
-  animation-timeline:  view();
+  animation-timeline: view();
   animation-range: entry 0% cover 40%;
- }
+}
 
- @media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .nav-links {
     display: none;
   }
@@ -1228,60 +1251,60 @@ header {
     z-index: -2;
     animation: 7s merah-hitam ease-in-out infinite;
   }
-  
+
   .indo {
     animation: 7s pertama ease-in-out infinite;
     color: #8c8c8c;
   }
-  
+
   .gelap {
     color: #8c8c8c;
     animation: 7s kedua ease-in-out infinite;
   }
-  
+
   @keyframes pertama {
     0% {
       color: #8c8c8c;
     }
-  
+
     50% {
       color: white;
     }
-  
+
     75% {
       color: #8c8c8c;
     }
   }
-  
+
   @keyframes kedua {
     0% {
       color: #8c8c8c;
     }
-  
+
     50% {
       color: #8c8c8c;
     }
-  
+
     75% {
       color: white;
     }
   }
-  
+
   @keyframes merah-hitam {
     0% {
       transform: translateX(0);
     }
-  
+
     50% {
       transform: translateX(0);
       width: 190px;
     }
-  
+
     75% {
       width: 87px;
       transform: translateX(200px);
     }
-  
+
     99% {
     }
   }
@@ -1320,7 +1343,7 @@ header {
   }
 
   .head2 {
-    font-size: 30px ;
+    font-size: 30px;
   }
 
   .info {
@@ -1368,19 +1391,18 @@ header {
     font-size: 20px;
   }
 
-
-  .subhead2-1::after, 
-  .subhead2-2::after, 
-  .subhead2-3::after, 
+  .subhead2-1::after,
+  .subhead2-2::after,
+  .subhead2-3::after,
   .subhead2-4::after {
     top: 2rem;
     left: 1rem;
     display: none;
-  } 
+  }
 
-  .subhead2-1:hover::after, 
-  .subhead2-2:hover::after, 
-  .subhead2-3:hover::after, 
+  .subhead2-1:hover::after,
+  .subhead2-2:hover::after,
+  .subhead2-3:hover::after,
   .subhead2-4:hover::after {
     width: 200px;
   }
@@ -1441,7 +1463,8 @@ header {
     width: 150px;
   }
 
-  .panah-kanan, .panah-kiri {
+  .panah-kanan,
+  .panah-kiri {
     right: 0;
     top: -2rem;
     font-size: 70px;
@@ -1480,7 +1503,7 @@ header {
     font-size: 15px;
   }
 
-  .content p{
+  .content p {
     font-size: 10px;
   }
 
@@ -1494,19 +1517,17 @@ header {
   }
 
   .gambar-dokum {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(6, 1fr);
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
   }
 
   .judul-dokum {
     font-size: 20px;
     margin-top: 2em;
   }
-  
 
   .gambar-dokum img {
     width: 190px;
@@ -1559,7 +1580,6 @@ header {
   .bagian1 {
     font-size: 10px;
   }
-  
 
   .slide {
     width: 90px;
@@ -1581,7 +1601,6 @@ header {
     font-size: 30px;
   }
 
-
   .f-tgh {
     text-align: center;
     flex-direction: column;
@@ -1590,7 +1609,8 @@ header {
     margin: 0;
   }
 
-  .f-logo, .container-social {
+  .f-logo,
+  .container-social {
     margin-left: 50%;
     transform: translateX(-50%);
   }
@@ -1616,6 +1636,7 @@ header {
 
   .hr {
     width: 100vw;
+    margin-top: 10rem;
   }
 
   .img1-dokum {
@@ -1626,17 +1647,16 @@ header {
     width: 1px;
   }
 
-  .container-ats, .container-bwa {
+  .container-ats,
+  .container-bwa {
     display: none;
   }
-
 
   .hero1 {
     transform: translateX(140%);
   }
 
   .bg {
-    transform: translateX(-1px);
     width: 100vw;
   }
 
@@ -1644,8 +1664,83 @@ header {
     width: 100vw;
   }
 
+  .text-op {
+    font-size: 30px;
+  }
+
+  .box2,
+  .box3 {
+    display: block;
+  }
+
+  .box,
+  .box1 {
+    display: none;
+  }
+
+  .navbar {
+    gap: 3rem;
+  }
+
+  .kiri {
+    margin: 0;
+  }
+
+  .kanan {
+    margin-right: 2rem;
+  }
+
+  .kanan svg {
+    display: block;
+    height: 30px;
+    width: 30px;
+  }
 
 
+  .menu {
+    display: block;
+    transform: translateX(100%);
+    transition: all 500ms ease-out;
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background-color: black;
+    right: 0;
+    z-index: 10000000000000;
+    opacity: 0.9;
+  }
 
- }
+  .nav-links1 {
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+    list-style-type: none;
+    margin-top: 3rem;
+  }
 
+  .links {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .nav-links1 a {
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    opacity: 1;
+  }
+
+  .close {
+    height: 50px;
+    width:auto;
+    position: relative;
+    right: 20px;
+    top: 20px;
+  }
+
+  .close img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

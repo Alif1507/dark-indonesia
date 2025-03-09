@@ -36,5 +36,55 @@ animate(
   { duration: 4, ease: [0.39, 0.24, 0.3, 1], delay: 8.4 }
 );
 
+animate(
+  ".box",
+  { display: "none" },
+  { duration: 4, ease: [0.39, 0.24, 0.3, 1], delay: 8.7 }
+);
+
+animate(
+  ".box1",
+  { display: "none" },
+  { duration: 4, ease: [0.39, 0.24, 0.3, 1], delay: 8.7 }
+);
+
+animate(
+  ".box2",
+  { backgroundColor: "rgb(255, 0, 0)" },
+  { duration: 4, ease: [0.39, 0.24, 0.3, 1], delay: 8 }
+);
+
+animate(
+  ".box3",
+  { backgroundColor: "rgb(255, 0, 0)" },
+  { duration: 4, ease: [0.39, 0.24, 0.3, 1], delay: 8 }
+);
+
+animate(
+  ".box2",
+  { y: "-100%" },
+  { duration: 4, ease: [0.39, 0.24, 0.3, 1], delay: 8.4 }
+);
+animate(
+  ".box3",
+  { y: "100%" },
+  { duration: 4, ease: [0.39, 0.24, 0.3, 1], delay: 8.4 }
+);
+
+animate(
+  ".box2",
+  { display: "none" },
+  { duration: 4, ease: [0.39, 0.24, 0.3, 1], delay: 8.7 }
+);
+
+animate(
+  ".box3",
+  { display: "none" },
+  { duration: 4, ease: [0.39, 0.24, 0.3, 1], delay: 8.7 }
+);
+
+
+
+
 
 

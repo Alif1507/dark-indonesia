@@ -96,3 +96,16 @@ dots.forEach((dot, dotIndex) => {
 updateSlider();
 
 
+const burger = document.querySelector('.burger')
+const close1 = document.querySelector(".close")
+
+
+burger.addEventListener("click", () => {
+  document.querySelector('.menu').style.transform = "translateX(0px)"
+})
+
+close1.addEventListener("click", () => {
+  document.querySelector('.menu').style.transform = "translateX(100%)"
+})
+
+
