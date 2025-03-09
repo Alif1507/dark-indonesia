@@ -1112,8 +1112,8 @@ header {
 }
 
 .f-logo {
-  width: 170px;
-  height: 170px;
+  width: 200px;
+  height: 200px;
 }
 
 .f-tahu {
@@ -1138,7 +1138,7 @@ header {
 .f-logo img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .container-social {
@@ -1315,12 +1315,13 @@ header {
   }
 
   .hero1 {
-    margin-left: -10rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+    justify-content: center; 
+    align-items: center; 
+    position: absolute; 
+}
+
 
   .subhead1 {
     text-align: center;
@@ -1527,7 +1528,7 @@ header {
 
   .judul-dokum {
     font-size: 20px;
-    margin-top: 2em;
+    padding-top: 7rem;
   }
 
   .gambar-dokum img {
@@ -1551,6 +1552,10 @@ header {
 
   .kata-sol {
     font-size: 10px;
+  }
+
+  .judul-sol {
+    font-size: 30px;
   }
 
   .head-isi {
@@ -1653,9 +1658,6 @@ header {
     display: none;
   }
 
-  .hero1 {
-    transform: translateX(140%);
-  }
 
   .bg {
     width: 100vw;
