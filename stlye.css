@@ -3,8 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap");
 
+
 html {
   scroll-behavior: smooth;
+  width: 100vw;
 }
 
 body {
@@ -67,6 +69,10 @@ body {
   width: 100vw;
   margin: 1rem 0rem 0 0rem;
   z-index: 90;
+}
+
+.hero1 {
+ display: none;
 }
 
 .kiri {
@@ -142,6 +148,9 @@ header {
 .container-ats,
 .container-bwa {
   position: relative;
+}
+.container-ats {
+  left: -5rem;
 }
 
 .container-bwa {
@@ -257,6 +266,7 @@ header {
   font-family: "Inter", sans-serif;
   font-weight: bold;
   color: white;
+  width: 500px;
   font-size: 40px;
 }
 
@@ -265,6 +275,7 @@ header {
   font-family: "Inter", sans-serif;
   font-size: 15px;
   margin-bottom: 100px;
+  width: 500px;
 }
 
 .btn1 {
@@ -291,8 +302,8 @@ header {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-bottom: 4rem;
-  margin-bottom: -1.3rem;
+  padding-bottom: 5rem;
+  margin-bottom: -3.3rem;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     40deg,
@@ -1276,6 +1287,10 @@ header {
   }
 
   .hero {
+    display: none;
+  }
+
+  .hero1 {
     margin-left: -10rem;
     display: flex;
     flex-direction: column;
@@ -1307,5 +1322,330 @@ header {
   .head2 {
     font-size: 30px ;
   }
+
+  .info {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 4rem;
+    margin-bottom: -1.3rem;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      70deg,
+      rgba(255, 255, 255, 1) 20%,
+      rgba(255, 95, 95, 1) 100%
+    );
+  }
+
+  .info-kiri {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info-kanan {
+    margin: 0;
+  }
+
+  .pillar {
+    display: none;
+  }
+
+  .subhead2-1,
+  .subhead2-2 {
+    font-size: 20px;
+  }
+
+
+  .subhead2-1::after, 
+  .subhead2-2::after, 
+  .subhead2-3::after, 
+  .subhead2-4::after {
+    top: 2rem;
+    left: 1rem;
+    display: none;
+  } 
+
+  .subhead2-1:hover::after, 
+  .subhead2-2:hover::after, 
+  .subhead2-3:hover::after, 
+  .subhead2-4:hover::after {
+    width: 200px;
+  }
+
+  .parag2-1 {
+    width: 200px;
+    font-size: 10px;
+  }
+
+  .parag2-2 {
+    width: 200px;
+    text-align: start;
+    font-size: 10px;
+  }
+
+  .kiri-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subhead2-3 {
+    font-size: 20px;
+  }
+
+  .parag2-3 {
+    font-size: 10px;
+    width: 200px;
+    text-align: start;
+  }
+
+  .dampak {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subhead2-4 {
+    font-size: 20px;
+  }
+
+  .container-kabur {
+    width: 400px;
+    height: auto;
+  }
+
+  .kabur {
+    width: 150px;
+    height: 150px;
+  }
+
+  .kabur1::after,
+  .kabur2::after,
+  .kabur3::after,
+  .kabur4::after {
+    width: 150px;
+  }
+
+  .panah-kanan, .panah-kiri {
+    right: 0;
+    top: -2rem;
+    font-size: 70px;
+  }
+
+  .masalah {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .head3-1 {
+    margin-top: 6rem;
+    font-size: 30px;
+  }
+
+  .subhead3-1 {
+    text-align: center;
+    width: 300px;
+    font-size: 17px;
+  }
+
+  .parag3-1 {
+    font-size: 10px;
+    text-align: center;
+    border: none;
+  }
+
+  .subhead3-3 {
+    text-align: center;
+    font-size: 17px;
+  }
+
+  .accordion-header .accordion-title {
+    font-size: 15px;
+  }
+
+  .content p{
+    font-size: 10px;
+  }
+
+  .subhead3-2 {
+    font-size: 17px;
+  }
+
+  .parag3-2 {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .gambar-dokum {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+
+  }
+
+  .judul-dokum {
+    font-size: 20px;
+    margin-top: 2em;
+  }
+  
+
+  .gambar-dokum img {
+    width: 190px;
+    height: auto;
+  }
+
+  .kj {
+    display: none;
+  }
+
+  .head-sol h1 {
+    margin-top: 6rem;
+    font-size: 20px;
+  }
+
+  .isi-sol {
+    width: 301px;
+    height: 100px;
+  }
+
+  .kata-sol {
+    font-size: 10px;
+  }
+
+  .head-isi {
+    flex-direction: column-reverse;
+  }
+
+  .kel2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .judul-isi {
+    font-size: 10px;
+  }
+
+  .kel4 {
+    font-size: 10px;
+    width: 240px;
+  }
+
+  .bagian2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bagian1 {
+    font-size: 10px;
+  }
+  
+
+  .slide {
+    width: 90px;
+    height: 119px;
+  }
+
+  .slide img {
+    width: 90px;
+    height: 119px;
+  }
+
+  .f-ats {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .f-ats h1 {
+    width: 400px;
+    font-size: 30px;
+  }
+
+
+  .f-tgh {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .f-logo, .container-social {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .f-info {
+    margin-top: 2rem;
+  }
+
+  .f-info a {
+    font-size: 15px;
+  }
+
+  .f-bwh {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .f-bwh ul {
+    margin-left: -2rem;
+  }
+
+  .hr {
+    width: 100vw;
+  }
+
+  .img1-dokum {
+    display: none;
+  }
+
+  header {
+    width: 1px;
+  }
+
+  .container-ats, .container-bwa {
+    display: none;
+  }
+
+
+  .hero1 {
+    transform: translateX(140%);
+  }
+
+  .bg {
+    transform: translateX(-1px);
+    width: 100vw;
+  }
+
+  .navbar {
+    width: 100vw;
+  }
+
+
+
+
  }
 

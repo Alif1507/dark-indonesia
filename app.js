@@ -14,9 +14,15 @@ let panahKanan = document.querySelector(".panah-kanan")
 let panahkiri = document.querySelector(".panah-kiri")
 
 panahKanan.addEventListener("click", () => {
-  document.querySelectorAll(".kabur").forEach((el) => {
-    el.style.transform = "translateX(-588px)";
-  });
+  if (window.innerWidth > "769px") {
+    document.querySelectorAll(".kabur").forEach((el) => {
+      el.style.transform = "translateX(-588px)";
+    });
+  } else {
+    document.querySelectorAll(".kabur").forEach((el) => {
+      el.style.transform = "translateX(-450px)";
+    });
+  }
 
   panahKanan.style.opacity = "0"
   panahKanan.style.pointerEvents = "none"
