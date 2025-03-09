@@ -311,6 +311,7 @@ header {
 .head2 {
   font-family: "Poppins", sans-serif;
   font-size: 50px;
+  color: white;
 }
 
 .info {
@@ -496,6 +497,36 @@ header {
 
 .kabur2::after {
   content: "Sumber: kompas.id";
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  opacity: 0.4;
+  width: 217px;
+  height: 50px;
+  position: absolute;
+  border-radius: 0 0 24px 24px;
+  bottom: 0;
+  left: 0;
+}
+
+.kabur3::after {
+  content: "Sumber: kompas.id";
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  opacity: 0.4;
+  width: 217px;
+  height: 50px;
+  position: absolute;
+  border-radius: 0 0 24px 24px;
+  bottom: 0;
+  left: 0;
+}
+
+.kabur4::after {
+  content: "Sumber: CNN Indonesia";
   background-color: black;
   text-align: center;
   color: white;
@@ -1138,4 +1169,143 @@ header {
   font-weight: 200;
 }
 
+@keyframes daribawah {
+  from {
+    transform: translateY(200px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+  
+ }
+
+
+
+ .dari-bawah {
+  animation: daribawah linear;
+  animation-timeline:  view();
+  animation-range: entry 0% cover 40%;
+ }
+
+ @media only screen and (max-width: 767px) {
+  .nav-links {
+    display: none;
+  }
+
+  .gbr {
+    display: none;
+  }
+
+  .head1 {
+    font-size: 30px;
+    margin-top: 8rem;
+  }
+
+  .head1::before {
+    content: "";
+    background: rgb(153, 0, 0);
+    background: linear-gradient(
+      270deg,
+      rgba(153, 0, 0, 1) 0%,
+      rgba(255, 0, 0, 1) 20%
+    );
+    left: -10px;
+    width: 10px;
+    height: 40px;
+    position: absolute;
+    z-index: -2;
+    animation: 7s merah-hitam ease-in-out infinite;
+  }
+  
+  .indo {
+    animation: 7s pertama ease-in-out infinite;
+    color: #8c8c8c;
+  }
+  
+  .gelap {
+    color: #8c8c8c;
+    animation: 7s kedua ease-in-out infinite;
+  }
+  
+  @keyframes pertama {
+    0% {
+      color: #8c8c8c;
+    }
+  
+    50% {
+      color: white;
+    }
+  
+    75% {
+      color: #8c8c8c;
+    }
+  }
+  
+  @keyframes kedua {
+    0% {
+      color: #8c8c8c;
+    }
+  
+    50% {
+      color: #8c8c8c;
+    }
+  
+    75% {
+      color: white;
+    }
+  }
+  
+  @keyframes merah-hitam {
+    0% {
+      transform: translateX(0);
+    }
+  
+    50% {
+      transform: translateX(0);
+      width: 190px;
+    }
+  
+    75% {
+      width: 87px;
+      transform: translateX(200px);
+    }
+  
+    99% {
+    }
+  }
+
+  .hero {
+    margin-left: -10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subhead1 {
+    text-align: center;
+    font-size: 20px;
+    width: 200px;
+  }
+
+  .parag1 {
+    text-align: center;
+    width: 300px;
+    font-size: 12px;
+  }
+
+  .panh {
+    display: none;
+  }
+  .btn1 {
+    width: 234px;
+    height: 52px;
+    font-size: 20px;
+  }
+
+  .head2 {
+    font-size: 30px ;
+  }
+ }
 
