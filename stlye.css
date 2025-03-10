@@ -49,6 +49,10 @@ body {
   opacity: 0;
 }
 
+.panah-kanan, .panah-kiri {
+  display: none;
+}
+
 .box {
   position: fixed;
   top: 0;
@@ -989,7 +993,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
+
 
 .nav-button {
   cursor: pointer;
@@ -1091,6 +1097,8 @@ header {
 .ip1 {
   position: relative;
 }
+
+
 
 .ip1 img {
   height: 20px;
@@ -1223,7 +1231,59 @@ header {
   animation-range: entry 0% cover 40%;
 }
 
-@media only screen and (max-width: 767px) {
+
+
+.isian {
+  position: absolute;
+  overflow: hidden;
+  width: 253px;
+  height: 167px;
+  top: 50%;
+  border-radius:  0 0 30px 30px ;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  background-color: black;
+  opacity: 0;
+  transition: all 400ms ease;
+}
+
+.slide:hover .isian {
+  opacity: 0.5;
+  transform: translate(-50%, 0);
+}
+
+.isian h1 {
+  position: relative;
+  z-index: 1000000000;
+  opacity: 1;
+}
+
+.isian-1, .isian-2, .isian-3 {
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  color: #ffffff;
+  margin-left: 1rem;
+}
+
+.isian-2 {
+  color: #5686FF;
+}
+
+.isian-3 {
+  font-size: 8px;
+  text-decoration: underline;
+}
+
+
+@media only screen and (min-width: 1441px ) {
+  .pillar {
+    display: none;
+  }
+}
+
+
+
+@media only screen and (max-width: 769px) {
   .nav-links {
     display: none;
   }
@@ -1317,10 +1377,16 @@ header {
   .hero1 {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    position: absolute; 
-}
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+  }
+  
+
+  
 
 
   .subhead1 {
@@ -1453,16 +1519,19 @@ header {
     height: auto;
   }
 
+
+
   .kabur {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
   }
 
   .kabur1::after,
   .kabur2::after,
   .kabur3::after,
   .kabur4::after {
-    width: 150px;
+    width: 130px;
+    font-size: 14px;
   }
 
   .panah-kanan,
@@ -1471,6 +1540,7 @@ header {
     top: -2rem;
     font-size: 70px;
   }
+
 
   .masalah {
     flex-direction: column;
@@ -1532,7 +1602,7 @@ header {
   }
 
   .gambar-dokum img {
-    width: 190px;
+    width: 160px;
     height: auto;
   }
 
@@ -1665,10 +1735,11 @@ header {
 
   .navbar {
     width: 100vw;
+    z-index: 80;
   }
 
   .text-op {
-    font-size: 30px;
+    font-size: 50px;
   }
 
   .box2,
