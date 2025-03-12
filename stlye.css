@@ -140,8 +140,15 @@ body {
 .nav-links a {
   color: white;
   text-decoration: none;
+  transition: all 300ms ease;
   font-family: "Poppins", sans-serif;
 }
+
+.nav-links a:hover {
+  color: #ff0101;
+}
+
+
 
 .bg-nav {
   width: 100%;
@@ -151,6 +158,7 @@ body {
   z-index: 10;
   height: 6rem;
 }
+
 
 .bg img {
   height: 100%;
@@ -294,6 +302,40 @@ header {
   99% {
   }
 }
+
+
+@keyframes gerak-kanan {
+  0% {
+    transform: translateX(-580%);
+  }
+
+  100% {
+    transform: translateX(580%);
+  }
+}
+
+@keyframes gerak-kiri {
+  0% {
+    transform: translateX(580%);
+  }
+
+  100% {
+    transform: translateX(-580%);
+  }
+}
+
+.dukum-bwh {
+  animation: gerak-kanan 17s linear infinite;
+  animation-delay: 3s;
+  transform: translateX(-580%);
+}
+
+.dukum-ats {
+  animation: gerak-kiri 17s linear infinite;
+  transform: translateX(580%);
+}
+
+
 
 .subhead1 {
   font-family: "Inter", sans-serif;
