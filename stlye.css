@@ -309,9 +309,14 @@ header {
     transform: translateX(-580%);
   }
 
-  100% {
+  50% {
     transform: translateX(580%);
   }
+
+  100% {
+    transform: translateX(-580%);
+  }
+
 }
 
 @keyframes gerak-kiri {
@@ -319,19 +324,23 @@ header {
     transform: translateX(580%);
   }
 
-  100% {
+  50% {
     transform: translateX(-580%);
   }
+
+  100% {
+    transform: translateX(580%);
+  }
+
 }
 
 .dukum-bwh {
-  animation: gerak-kanan 17s linear infinite;
-  animation-delay: 3s;
+  animation: gerak-kanan 25s linear infinite;
   transform: translateX(-580%);
 }
 
 .dukum-ats {
-  animation: gerak-kiri 17s linear infinite;
+  animation: gerak-kiri 25s linear infinite;
   transform: translateX(580%);
 }
 
