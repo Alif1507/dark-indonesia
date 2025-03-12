@@ -353,9 +353,10 @@ header {
   width: 500px;
 }
 
+
+
 .btn1 {
   text-decoration: none;
-  color: white;
   font-weight: bold;
   font-family: "Inter", sans-serif;
   font-size: 35px;
@@ -370,6 +371,52 @@ header {
   height: 73px;
   cursor: pointer;
 }
+
+
+button {
+  --color: #ffffff;
+  font-family: inherit;
+  display: inline-block;
+  width: 6em;
+  height: 2.6em;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 20px;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+  transition: 0.3s all;
+
+}
+
+button::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 650px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: #da0808;
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+button:hover::before {
+  top: -30px;
+  left: -90px;
+}
+
 
 .information {
   display: flex;
